@@ -16,4 +16,3 @@ public:
 private:
     std::stack<std::shared_ptr<AbstractScene>> _sceneStack; //シーンのスタック
 };
-

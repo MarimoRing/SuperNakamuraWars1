@@ -27,5 +27,5 @@ void TitleScene::update()
 
 void TitleScene::draw() const
 {
-    DrawString(100, 100, "スーパー中村卓対戦", GetColor(255,255,255));
+    DrawString(100, 100, "タイトル画面", GetColor(255, 255, 255));
 }
