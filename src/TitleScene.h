@@ -9,4 +9,9 @@ public:
     virtual ~TitleScene() = default;
     void update() override;
     void draw() const override;
+
+private:
+    int X = 0;
+    const static int A;
+    const static int B;
 };

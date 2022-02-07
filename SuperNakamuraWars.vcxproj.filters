@@ -33,6 +33,9 @@
     <Filter Include="ソース ファイル\Resource">
       <UniqueIdentifier>{c55f8ded-e91e-4e89-80b0-452a7695fe17}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\Oldcode">
+      <UniqueIdentifier>{263877a4-fedf-41bb-97a3-1243748971e7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Looper.cpp">
@@ -138,6 +141,18 @@
     </ClInclude>
     <ClInclude Include="src\Image.h">
       <Filter>ソース ファイル\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Action.h">
+      <Filter>ソース ファイル\Oldcode</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Arrow.h">
+      <Filter>ソース ファイル\Oldcode</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Picture.h">
+      <Filter>ソース ファイル\Oldcode</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Setting.h">
+      <Filter>ソース ファイル\Oldcode</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
