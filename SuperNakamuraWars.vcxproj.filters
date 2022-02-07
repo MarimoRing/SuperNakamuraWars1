@@ -12,9 +12,6 @@
     <Filter Include="ソース ファイル\Common">
       <UniqueIdentifier>{3838f78d-8505-42e2-aa1b-80dcd2c24599}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\Game">
-      <UniqueIdentifier>{ab191e9f-a7cb-4d74-802d-b0a544c53281}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース ファイル\Scene">
       <UniqueIdentifier>{7769e850-e81e-447b-a0cc-46be1e774be7}</UniqueIdentifier>
     </Filter>
@@ -35,6 +32,9 @@
     </Filter>
     <Filter Include="ソース ファイル\Oldcode">
       <UniqueIdentifier>{263877a4-fedf-41bb-97a3-1243748971e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Game">
+      <UniqueIdentifier>{ab191e9f-a7cb-4d74-802d-b0a544c53281}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

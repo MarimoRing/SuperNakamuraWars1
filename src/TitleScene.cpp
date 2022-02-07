@@ -14,21 +14,25 @@ TitleScene::TitleScene(IOnSceneChangedListener* impl, const Parameter& parameter
 
 void TitleScene::update()
 {
+    if (Pad::getIns()->get(ePad::up) == 1) {
+        if (X > 0) X -= 100;
+        else if (X == 0) X = 300; 
+        return;
+    }
+    if (Pad::getIns()->get(ePad::down) == 1) {
+        if (X < 300) X += 100;
+        else if (X == 300) X = 0;
+        return;
+    }
     if (Pad::getIns()->get(ePad::decision) == 1) {
-        Parameter parameter;
-        parameter.set(GameScene::ParameterTagLevel, Define::eLevel::Easy);
-        const bool stackClear = false;
-        _implSceneChanged->onSceneChanged(eScene::Game, parameter, stackClear);
-        return;
+        if (X == 0) {
+            Parameter parameter;
+            parameter.set(GameScene::ParameterTagLevel, Define::eLevel::Easy);
+            const bool stackClear = false;
+            _implSceneChanged->onSceneChanged(eScene::Game, parameter, stackClear);
+            return;
+        }
     }
-    if (Pad::getIns()->get(ePad::cancel) == 1) {
-        Parameter parameter;
-        parameter.set(GameScene::ParameterTagLevel, Define::eLevel::Normal);
-        const bool stackClear = false;
-        _implSceneChanged->onSceneChanged(eScene::Game, parameter, stackClear);
-        return;
-    }
-
 }
 
 void TitleScene::draw() const
