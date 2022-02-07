@@ -1,9 +1,9 @@
 #pragma once
 
-#include <Windows.h>
+#include "Windows.h"
 
 class Error
 {
 public:
-	static void finish(char* errorMessage, LPCTSTR lpszFuncName, int lineN);
+	static void finish(const char* errorMessage, LPCTSTR lpszFuncName, int lineN);
 };
