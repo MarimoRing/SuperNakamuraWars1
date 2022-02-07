@@ -1,6 +1,8 @@
 #pragma once
 
 #include "AbstractScene.h"
+#include "Player.h"
+#include <memory>
 
 class GameScene : public AbstractScene
 {
@@ -15,6 +17,6 @@ public:
     void draw() const override;
 
 private:
-    int _level;
+    std::shared_ptr<Player> _player;
 };
 

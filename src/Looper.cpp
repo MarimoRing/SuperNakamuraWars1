@@ -5,11 +5,14 @@
 #include "Macro.h"
 #include "Keyboard.h"
 #include "Pad.h"
+#include "Image.h"
 
 using namespace std;
 
 Looper::Looper()
 {
+    Image::getIns()->load();
+
     Parameter parameter;
     _sceneStack.push(make_shared<TitleScene>(this, parameter)); //タイトル画面シーンを作ってpush
 }
@@ -41,10 +44,10 @@ void Looper::onSceneChanged(const eScene scene, const Parameter& parameter, cons
         }
     }
     switch (scene) {
-    case Title:
+    case Title://タイトル画面
         _sceneStack.push(make_shared<TitleScene>(this, parameter));
         break;
-    case Game:
+    case Game://ゲーム画面
         _sceneStack.push(make_shared<GameScene>(this, parameter));
         break;
     default:

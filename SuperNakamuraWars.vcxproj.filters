@@ -27,6 +27,12 @@
     <Filter Include="ソース ファイル\Input">
       <UniqueIdentifier>{f59a4268-1565-4ba6-a8c3-08f24c37de2f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\Player">
+      <UniqueIdentifier>{1af7ae57-b1b1-4821-a384-50b380c81832}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Resource">
+      <UniqueIdentifier>{c55f8ded-e91e-4e89-80b0-452a7695fe17}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Looper.cpp">
@@ -67,6 +73,12 @@
     </ClCompile>
     <ClCompile Include="src\Pad.cpp">
       <Filter>ソース ファイル\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Player.cpp">
+      <Filter>ソース ファイル\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Image.cpp">
+      <Filter>ソース ファイル\Resource</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -120,6 +132,12 @@
     </ClInclude>
     <ClInclude Include="src\Pad.h">
       <Filter>ソース ファイル\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Player.h">
+      <Filter>ソース ファイル\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Image.h">
+      <Filter>ソース ファイル\Resource</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

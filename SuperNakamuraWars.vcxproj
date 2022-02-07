@@ -25,11 +25,13 @@
     <ClCompile Include="src\Error.cpp" />
     <ClCompile Include="src\Fps.cpp" />
     <ClCompile Include="src\GameScene.cpp" />
+    <ClCompile Include="src\Image.cpp" />
     <ClCompile Include="src\Keyboard.cpp" />
     <ClCompile Include="src\Looper.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\Pad.cpp" />
     <ClCompile Include="src\Parameter.cpp" />
+    <ClCompile Include="src\Player.cpp" />
     <ClCompile Include="src\SystemMain.cpp" />
     <ClCompile Include="src\TitleScene.cpp" />
   </ItemGroup>
@@ -41,12 +43,14 @@
     <ClInclude Include="src\eScene.h" />
     <ClInclude Include="src\Fps.h" />
     <ClInclude Include="src\GameScene.h" />
+    <ClInclude Include="src\Image.h" />
     <ClInclude Include="src\IOnSceneChangedListener.h" />
     <ClInclude Include="src\Keyboard.h" />
     <ClInclude Include="src\Looper.h" />
     <ClInclude Include="src\Macro.h" />
     <ClInclude Include="src\Pad.h" />
     <ClInclude Include="src\Parameter.h" />
+    <ClInclude Include="src\Player.h" />
     <ClInclude Include="src\Singleton.h" />
     <ClInclude Include="src\SystemMain.h" />
     <ClInclude Include="src\Task.h" />
