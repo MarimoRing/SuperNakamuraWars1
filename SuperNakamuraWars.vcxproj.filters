@@ -21,6 +21,9 @@
     <Filter Include="ソース ファイル\Title">
       <UniqueIdentifier>{e722f8f3-9b1d-457a-a50d-fc9f9f8c588b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\Utils">
+      <UniqueIdentifier>{e3432163-2c7e-4f94-8a84-154954579d02}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Looper.cpp">
@@ -49,6 +52,12 @@
     </ClCompile>
     <ClCompile Include="src\GameScene.cpp">
       <Filter>ソース ファイル\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CalcUtils.cpp">
+      <Filter>ソース ファイル\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Fps.cpp">
+      <Filter>ソース ファイル\Common</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -86,6 +95,12 @@
       <Filter>ソース ファイル\Game</Filter>
     </ClInclude>
     <ClInclude Include="src\Macro.h">
+      <Filter>ソース ファイル\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CalcUtils.h">
+      <Filter>ソース ファイル\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Fps.h">
       <Filter>ソース ファイル\Common</Filter>
     </ClInclude>
   </ItemGroup>

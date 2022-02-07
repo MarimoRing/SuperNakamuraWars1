@@ -20,8 +20,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\AbstractScene.cpp" />
+    <ClCompile Include="src\CalcUtils.cpp" />
     <ClCompile Include="src\Define.cpp" />
     <ClCompile Include="src\Error.cpp" />
+    <ClCompile Include="src\Fps.cpp" />
     <ClCompile Include="src\GameScene.cpp" />
     <ClCompile Include="src\Looper.cpp" />
     <ClCompile Include="src\main.cpp" />
@@ -31,9 +33,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\AbstractScene.h" />
+    <ClInclude Include="src\CalcUtils.h" />
     <ClInclude Include="src\Define.h" />
     <ClInclude Include="src\Error.h" />
     <ClInclude Include="src\eScene.h" />
+    <ClInclude Include="src\Fps.h" />
     <ClInclude Include="src\GameScene.h" />
     <ClInclude Include="src\IOnSceneChangedListener.h" />
     <ClInclude Include="src\Looper.h" />

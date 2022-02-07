@@ -14,10 +14,12 @@ Looper::Looper()
 /*!
 @brief スタックのトップのシーンの処理をする
 */
-bool Looper::loop() const
+bool Looper::loop()
 {
     _sceneStack.top()->update();    //スタックのトップのシーンを更新
     _sceneStack.top()->draw();      //スタックのトップのシーンを描画
+    _fps.draw();
+    _fps.wait();
     return true;
 }
 
