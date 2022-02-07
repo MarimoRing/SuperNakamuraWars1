@@ -3,6 +3,8 @@
 #include "Error.h"
 #include "GameScene.h"
 #include "Macro.h"
+#include "Keyboard.h"
+#include "Pad.h"
 
 using namespace std;
 
@@ -16,6 +18,8 @@ Looper::Looper()
 */
 bool Looper::loop()
 {
+    Keyboard::getIns()->update();   //キーボードの更新
+    Pad::getIns()->update();        //ジョイパッドの更新
     _sceneStack.top()->update();    //スタックのトップのシーンを更新
     _sceneStack.top()->draw();      //スタックのトップのシーンを描画
     _fps.draw();
