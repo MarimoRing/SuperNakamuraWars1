@@ -20,11 +20,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\AbstractScene.cpp" />
+    <ClCompile Include="src\Board.cpp" />
     <ClCompile Include="src\CalcUtils.cpp" />
     <ClCompile Include="src\Define.cpp" />
     <ClCompile Include="src\Error.cpp" />
     <ClCompile Include="src\Fps.cpp" />
-    <ClCompile Include="src\GameScene.cpp" />
+    <ClCompile Include="src\MapScene.cpp" />
     <ClCompile Include="src\Image.cpp" />
     <ClCompile Include="src\Keyboard.cpp" />
     <ClCompile Include="src\Looper.cpp" />
@@ -39,12 +40,13 @@
     <ClInclude Include="src\AbstractScene.h" />
     <ClInclude Include="src\Action.h" />
     <ClInclude Include="src\Arrow.h" />
+    <ClInclude Include="src\Board.h" />
     <ClInclude Include="src\CalcUtils.h" />
     <ClInclude Include="src\Define.h" />
     <ClInclude Include="src\Error.h" />
     <ClInclude Include="src\eScene.h" />
     <ClInclude Include="src\Fps.h" />
-    <ClInclude Include="src\GameScene.h" />
+    <ClInclude Include="src\MapScene.h" />
     <ClInclude Include="src\Image.h" />
     <ClInclude Include="src\IOnSceneChangedListener.h" />
     <ClInclude Include="src\Keyboard.h" />

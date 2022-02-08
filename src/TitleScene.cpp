@@ -1,6 +1,6 @@
 #include "TitleScene.h"
 #include <DxLib.h>
-#include "GameScene.h"
+#include "MapScene.h"
 #include "Define.h"
 #include "Keyboard.h"
 #include "Pad.h"
@@ -16,20 +16,20 @@ void TitleScene::update()
 {
     if (Pad::getIns()->get(ePad::up) == 1) {
         if (X > 0) X -= 100;
-        else if (X == 0) X = 300; 
+        else if (X == 0) X = 400; 
         return;
     }
     if (Pad::getIns()->get(ePad::down) == 1) {
-        if (X < 300) X += 100;
-        else if (X == 300) X = 0;
+        if (X < 400) X += 100;
+        else if (X == 400) X = 0;
         return;
     }
     if (Pad::getIns()->get(ePad::decision) == 1) {
         if (X == 0) {
             Parameter parameter;
-            parameter.set(GameScene::ParameterTagLevel, Define::eLevel::Easy);
+            parameter.set(MapScene::ParameterTagLevel, Define::eLevel::Easy);
             const bool stackClear = false;
-            _implSceneChanged->onSceneChanged(eScene::Game, parameter, stackClear);
+            _implSceneChanged->onSceneChanged(eScene::MapUI, parameter, stackClear);
             return;
         }
     }
@@ -42,10 +42,11 @@ void TitleScene::draw() const
 
     Color.Read();
     DrawString(100, 100, "スーパー中村卓大戦", Color.White/*GetColor(255, 255, 255)*/);
-    DrawBox(A - 150, B - 50, A + 400, B + 420, Color.Blue, TRUE);
-    DrawString(A, B, "New Game", Color.White);
-    DrawString(A, B + 100, "Continue", Color.White);
-    DrawString(A, B + 200, "Option", Color.White);
-    DrawString(A, B + 300, "Exit", Color.White);
+    DrawBox(A - 150, B - 50, A + 600, B + 520, Color.Blue, TRUE);
+    DrawString(A, B, "スタート", Color.White);
+    DrawString(A, B + 100, "ロード", Color.White);
+    DrawString(A, B + 200, "コンティニュー", Color.White);
+    DrawString(A, B + 300, "メニュー", Color.White);
+    DrawString(A, B + 400, "ゲーム終了", Color.White);
     DrawString(A - 100, B + X, "→", Color.White);    
 }

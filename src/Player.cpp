@@ -2,10 +2,11 @@
 #include "Pad.h"
 #include "DxLib.h"
 #include "Image.h"
+#include "Define.h"
 
-const static float SPEED = 9;
+const static float SPEED = 100;
 
-Player::Player() : _x(100), _y(100)
+Player::Player() : _x(450), _y(450)
 {
 }
 
@@ -26,18 +27,19 @@ void Player::draw() const
 void Player::move()
 {
     float moveX = 0, moveY = 0;
-    if (Pad::getIns()->get(ePad::left) > 0) {
+    if (Pad::getIns()->get(ePad::left) == 1) {
         moveX -= SPEED;
     }
-    if (Pad::getIns()->get(ePad::right) > 0) {
+    if (Pad::getIns()->get(ePad::right) == 1) {
         moveX += SPEED;
     }
-    if (Pad::getIns()->get(ePad::down) > 0) {
+    if (Pad::getIns()->get(ePad::down) == 1) {
         moveY += SPEED;
     }
-    if (Pad::getIns()->get(ePad::up) > 0) {
+    if (Pad::getIns()->get(ePad::up) == 1) {
         moveY -= SPEED;
     }
+    /*
     if (moveX && moveY) { //Î‚ßˆÚ“®
         moveX /= (float)sqrt(2.0);
         moveY /= (float)sqrt(2.0);
@@ -46,6 +48,23 @@ void Player::move()
         moveX /= 3;
         moveY /= 3;
     }
-    _x += moveX;
-    _y += moveY;
+    */
+    if (moveX + _x < Define::IN_X) {//¶˜g‚æ‚è¶‚È‚ç
+        _x = (float)Define::IN_X;   //¶˜g‚Å~‚ß‚é
+    }
+    else if (moveX + _x > Define::IN_X + Define::IN_W) {//‰E˜g‚æ‚è‰E‚È‚ç
+        _x = (float)(Define::IN_X + Define::IN_W);      //‰E˜g‚Å~‚ß‚é
+    }
+    else {//˜g“à‚È‚ç
+        _x += moveX;//•’Ê‚ÉˆÚ“®
+    }
+    if (moveY + _y < Define::IN_Y) {   //ã˜g‚æ‚èã‚È‚ç
+        _y = (float)Define::IN_Y;      //ã˜g‚Å~‚ß‚é
+    }
+    else if (moveY + _y > Define::IN_Y + Define::IN_H) {    //‰º˜g‚æ‚è‰º‚È‚ç
+        _y = (float)(Define::IN_Y + Define::IN_H);          //‰º˜g‚Å~‚ß‚é
+    }
+    else {//˜g“à‚È‚ç
+        _y += moveY;//•’Ê‚ÉˆÚ“®
+    }
 }

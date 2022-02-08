@@ -3,7 +3,9 @@
 
 Image::Image()
 {
-    _player = myLoadGraph("./data/image/Player.png");
+    _player = myLoadGraph("./data/image/cursor/cursor.png");
+    _board = myLoadGraph("./data/image/board/board2.png");
+    _board2 = myLoadGraph("./data/image/board/universe.png");
 }
 
 /*!
@@ -16,14 +18,6 @@ void Image::release()
         DeleteGraph(_images[i]);
     }
     _images.clear();
-}
-
-/*!
-@brief ƒvƒŒƒCƒ„[‚Ì‰æ‘œ‚ğæ“¾‚·‚é
-*/
-int Image::getPlayer() const
-{
-    return _player;
 }
 
 /*!

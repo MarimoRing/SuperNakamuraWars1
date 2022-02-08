@@ -2,9 +2,9 @@
 #include "Fps.h"
 #include "CalcUtils.h"
 
-const static int LIST_LEN_MAX = 120;	//最大120フレームで待機処理を計算する(2以上にする)
-const static int FPS = 60;			    //FPS
-const static int UPINTVL = 60;		    //60フレームに一度更新する
+const static int LIST_LEN_MAX = 48;	//最大120フレームで待機処理を計算する(2以上にする)
+const static int FPS = 24;			    //FPS
+const static int UPINTVL = 24;		    //60フレームに一度更新する
 
 Fps::Fps():_counter(0),_fps(0){}
 

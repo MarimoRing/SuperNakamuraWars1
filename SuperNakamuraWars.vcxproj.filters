@@ -33,8 +33,11 @@
     <Filter Include="ソース ファイル\Oldcode">
       <UniqueIdentifier>{263877a4-fedf-41bb-97a3-1243748971e7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\Game">
+    <Filter Include="ソース ファイル\MapUI">
       <UniqueIdentifier>{ab191e9f-a7cb-4d74-802d-b0a544c53281}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Board">
+      <UniqueIdentifier>{b6cbd322-77bd-45f8-9940-43cac71166a3}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -62,8 +65,8 @@
     <ClCompile Include="src\Parameter.cpp">
       <Filter>ソース ファイル\Scene</Filter>
     </ClCompile>
-    <ClCompile Include="src\GameScene.cpp">
-      <Filter>ソース ファイル\Game</Filter>
+    <ClCompile Include="src\MapScene.cpp">
+      <Filter>ソース ファイル\MapUI</Filter>
     </ClCompile>
     <ClCompile Include="src\CalcUtils.cpp">
       <Filter>ソース ファイル\Utils</Filter>
@@ -82,6 +85,9 @@
     </ClCompile>
     <ClCompile Include="src\Image.cpp">
       <Filter>ソース ファイル\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Board.cpp">
+      <Filter>ソース ファイル\Board</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -115,8 +121,8 @@
     <ClInclude Include="src\Parameter.h">
       <Filter>ソース ファイル\Scene</Filter>
     </ClInclude>
-    <ClInclude Include="src\GameScene.h">
-      <Filter>ソース ファイル\Game</Filter>
+    <ClInclude Include="src\MapScene.h">
+      <Filter>ソース ファイル\MapUI</Filter>
     </ClInclude>
     <ClInclude Include="src\Macro.h">
       <Filter>ソース ファイル\Common</Filter>
@@ -153,6 +159,9 @@
     </ClInclude>
     <ClInclude Include="src\Setting.h">
       <Filter>ソース ファイル\Oldcode</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Board.h">
+      <Filter>ソース ファイル\Board</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

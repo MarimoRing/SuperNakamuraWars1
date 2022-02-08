@@ -11,7 +11,9 @@ public:
     void load() {}
     void release();
 
-    int getPlayer() const;
+    int getPlayer() const { return _player; }
+    int getBoard() const { return _board; }
+    int getBoard2() const { return _board2; }
 
 private:
     int myLoadGraph(const char*);
@@ -19,6 +21,7 @@ private:
 
     std::vector<int> _images;
     int _player;
-
+    int _board;
+    int _board2;
 };
 
