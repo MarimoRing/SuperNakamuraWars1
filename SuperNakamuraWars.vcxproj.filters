@@ -24,9 +24,6 @@
     <Filter Include="ソース ファイル\Input">
       <UniqueIdentifier>{f59a4268-1565-4ba6-a8c3-08f24c37de2f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\Player">
-      <UniqueIdentifier>{1af7ae57-b1b1-4821-a384-50b380c81832}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース ファイル\Resource">
       <UniqueIdentifier>{c55f8ded-e91e-4e89-80b0-452a7695fe17}</UniqueIdentifier>
     </Filter>
@@ -41,6 +38,9 @@
     </Filter>
     <Filter Include="ソース ファイル\Enemy">
       <UniqueIdentifier>{01bf68b5-cdec-4895-867c-2c12223c61cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Cursor">
+      <UniqueIdentifier>{1af7ae57-b1b1-4821-a384-50b380c81832}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -84,7 +84,7 @@
       <Filter>ソース ファイル\Input</Filter>
     </ClCompile>
     <ClCompile Include="src\Cursor.cpp">
-      <Filter>ソース ファイル\Player</Filter>
+      <Filter>ソース ファイル\Cursor</Filter>
     </ClCompile>
     <ClCompile Include="src\Image.cpp">
       <Filter>ソース ファイル\Resource</Filter>
@@ -96,6 +96,18 @@
       <Filter>ソース ファイル\Enemy</Filter>
     </ClCompile>
     <ClCompile Include="src\EnemyManager.cpp">
+      <Filter>ソース ファイル\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AbsrtactEnemy.cpp">
+      <Filter>ソース ファイル\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BigEnemy.cpp">
+      <Filter>ソース ファイル\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NormalEnemy.cpp">
+      <Filter>ソース ファイル\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SmallEnemy.cpp">
       <Filter>ソース ファイル\Enemy</Filter>
     </ClCompile>
   </ItemGroup>
@@ -152,7 +164,7 @@
       <Filter>ソース ファイル\Input</Filter>
     </ClInclude>
     <ClInclude Include="src\Cursor.h">
-      <Filter>ソース ファイル\Player</Filter>
+      <Filter>ソース ファイル\Cursor</Filter>
     </ClInclude>
     <ClInclude Include="src\Image.h">
       <Filter>ソース ファイル\Resource</Filter>
@@ -176,6 +188,18 @@
       <Filter>ソース ファイル\Enemy</Filter>
     </ClInclude>
     <ClInclude Include="src\EnemyManager.h">
+      <Filter>ソース ファイル\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AbstractEnemy.h">
+      <Filter>ソース ファイル\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BigEnemy.h">
+      <Filter>ソース ファイル\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NormalEnemy.h">
+      <Filter>ソース ファイル\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SmallEnemy.h">
       <Filter>ソース ファイル\Enemy</Filter>
     </ClInclude>
   </ItemGroup>

@@ -13,11 +13,11 @@ public:
     void release();
 
     int getCursor() const { return _player; }
-    int getBoard() const { return _board; }
+    int getBoard()  const { return _board; }
     int getBoard2() const { return _board2; }
-    const int* getEnemySmall() const { return _enemySmall; }
+    const int* getEnemySmall () const { return _enemySmall; }
     const int* getEnemyNormal() const { return _enemyNormal; }
-    const int* getEnemyBig() const { return _enemyBig; }
+    const int* getEnemyBig   () const { return _enemyBig; }
 
 private:
     int myLoadGraph(const char*);

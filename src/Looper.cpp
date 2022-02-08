@@ -25,8 +25,8 @@ bool Looper::loop()
     Pad::getIns()->update();        //ジョイパッドの更新
     _sceneStack.top()->update();    //スタックのトップのシーンを更新
     _sceneStack.top()->draw();      //スタックのトップのシーンを描画
-    //_fps.draw();//FPSを表示
-    _fps.wait();
+    //_fps.draw();                    //FPSを表示
+    _fps.wait();                    //設定したFPSになるように待機
     return true;
 }
 

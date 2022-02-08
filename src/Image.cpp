@@ -7,8 +7,8 @@ Image::Image()
     _board = myLoadGraph("./data/image/board/board2.png");
     _board2 = myLoadGraph("./data/image/board/universe.png");
     myLoadDivGraph("./data/image/enemy/normal.png", 9, 3, 3, 54, 54, _enemyNormal);
-    myLoadDivGraph("./data/image/enemy/bit.png", 9, 3, 3, 160, 120, _enemyBig);
-    myLoadDivGraph("./data/image/enemy/small.png", 2, 2, 1, 32, 32, _enemySmall);
+    myLoadDivGraph("./data/image/enemy/big.png"   , 9, 3, 3, 160, 120, _enemyBig);
+    myLoadDivGraph("./data/image/enemy/small.png" , 2, 2, 1, 32, 32, _enemySmall);
 }
 
 /*!

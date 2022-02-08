@@ -3,7 +3,7 @@
 #include "Task.h"
 #include <memory>
 #include <list>
-#include "Enemy.h"
+#include "AbstractEnemy.h"
 
 class EnemyManager : public Task
 {
@@ -14,6 +14,6 @@ public:
     void draw() const override;
 
 private:
-    std::list<std::shared_ptr<Enemy>> _list;
+    std::list<std::shared_ptr<AbstractEnemy>> _list;
 };
 

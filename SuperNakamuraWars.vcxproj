@@ -19,7 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\AbsrtactEnemy.cpp" />
     <ClCompile Include="src\AbstractScene.cpp" />
+    <ClCompile Include="src\BigEnemy.cpp" />
     <ClCompile Include="src\Board.cpp" />
     <ClCompile Include="src\CalcUtils.cpp" />
     <ClCompile Include="src\Define.cpp" />
@@ -32,16 +34,20 @@
     <ClCompile Include="src\Keyboard.cpp" />
     <ClCompile Include="src\Looper.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\NormalEnemy.cpp" />
     <ClCompile Include="src\Pad.cpp" />
     <ClCompile Include="src\Parameter.cpp" />
     <ClCompile Include="src\Cursor.cpp" />
+    <ClCompile Include="src\SmallEnemy.cpp" />
     <ClCompile Include="src\SystemMain.cpp" />
     <ClCompile Include="src\TitleScene.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\AbstractEnemy.h" />
     <ClInclude Include="src\AbstractScene.h" />
     <ClInclude Include="src\Action.h" />
     <ClInclude Include="src\Arrow.h" />
+    <ClInclude Include="src\BigEnemy.h" />
     <ClInclude Include="src\Board.h" />
     <ClInclude Include="src\CalcUtils.h" />
     <ClInclude Include="src\Define.h" />
@@ -56,12 +62,14 @@
     <ClInclude Include="src\Keyboard.h" />
     <ClInclude Include="src\Looper.h" />
     <ClInclude Include="src\Macro.h" />
+    <ClInclude Include="src\NormalEnemy.h" />
     <ClInclude Include="src\Pad.h" />
     <ClInclude Include="src\Parameter.h" />
     <ClInclude Include="src\Picture.h" />
     <ClInclude Include="src\Cursor.h" />
     <ClInclude Include="src\Setting.h" />
     <ClInclude Include="src\Singleton.h" />
+    <ClInclude Include="src\SmallEnemy.h" />
     <ClInclude Include="src\SystemMain.h" />
     <ClInclude Include="src\Task.h" />
     <ClInclude Include="src\TitleScene.h" />
