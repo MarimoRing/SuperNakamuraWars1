@@ -2,11 +2,11 @@
 
 #include "Task.h"
 
-class Player : public Task
+class Cursor : public Task
 {
 public:
-    Player();
-    virtual ~Player() = default;
+    Cursor();
+    virtual ~Cursor() = default;
     bool update() override;
     void draw() const override;
 

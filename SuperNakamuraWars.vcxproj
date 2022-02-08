@@ -23,6 +23,8 @@
     <ClCompile Include="src\Board.cpp" />
     <ClCompile Include="src\CalcUtils.cpp" />
     <ClCompile Include="src\Define.cpp" />
+    <ClCompile Include="src\Enemy.cpp" />
+    <ClCompile Include="src\EnemyManager.cpp" />
     <ClCompile Include="src\Error.cpp" />
     <ClCompile Include="src\Fps.cpp" />
     <ClCompile Include="src\MapScene.cpp" />
@@ -32,7 +34,7 @@
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\Pad.cpp" />
     <ClCompile Include="src\Parameter.cpp" />
-    <ClCompile Include="src\Player.cpp" />
+    <ClCompile Include="src\Cursor.cpp" />
     <ClCompile Include="src\SystemMain.cpp" />
     <ClCompile Include="src\TitleScene.cpp" />
   </ItemGroup>
@@ -43,6 +45,8 @@
     <ClInclude Include="src\Board.h" />
     <ClInclude Include="src\CalcUtils.h" />
     <ClInclude Include="src\Define.h" />
+    <ClInclude Include="src\Enemy.h" />
+    <ClInclude Include="src\EnemyManager.h" />
     <ClInclude Include="src\Error.h" />
     <ClInclude Include="src\eScene.h" />
     <ClInclude Include="src\Fps.h" />
@@ -55,7 +59,7 @@
     <ClInclude Include="src\Pad.h" />
     <ClInclude Include="src\Parameter.h" />
     <ClInclude Include="src\Picture.h" />
-    <ClInclude Include="src\Player.h" />
+    <ClInclude Include="src\Cursor.h" />
     <ClInclude Include="src\Setting.h" />
     <ClInclude Include="src\Singleton.h" />
     <ClInclude Include="src\SystemMain.h" />

@@ -8,17 +8,20 @@ const char* MapScene::ParameterTagLevel = "ParameterTagLevel";//パラメータのタグ
 MapScene::MapScene(IOnSceneChangedListener* impl, const Parameter& parameter) : AbstractScene(impl, parameter)
 {
     _board = std::make_shared<Board>();
-    _player = std::make_shared<Player>();
+    _cursor = std::make_shared<Cursor>();
+    _enemyManager = std::make_shared<EnemyManager>();
 }
 
 void MapScene::update()
 {
     _board->update();
-    _player->update();
+    _cursor->update();
+    _enemyManager->update();
 }
 
 void MapScene::draw() const
 {
     _board->draw();
-    _player->draw();
+    _cursor->draw();
+    _enemyManager->draw();
 }

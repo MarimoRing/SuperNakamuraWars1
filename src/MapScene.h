@@ -2,9 +2,10 @@
 #pragma once
 
 #include "AbstractScene.h"
-#include "Player.h"
+#include "Cursor.h"
 #include <memory>
 #include "Board.h"
+#include "EnemyManager.h"
 
 class MapScene : public AbstractScene
 {
@@ -19,7 +20,8 @@ public:
     void draw() const override;
 
 private:
-    std::shared_ptr<Player> _player;
+    std::shared_ptr<Cursor> _cursor;
     std::shared_ptr<Board>  _board;
+    std::shared_ptr<EnemyManager>  _enemyManager;
 };
 

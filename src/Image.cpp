@@ -6,6 +6,9 @@ Image::Image()
     _player = myLoadGraph("./data/image/cursor/cursor.png");
     _board = myLoadGraph("./data/image/board/board2.png");
     _board2 = myLoadGraph("./data/image/board/universe.png");
+    myLoadDivGraph("./data/image/enemy/normal.png", 9, 3, 3, 54, 54, _enemyNormal);
+    myLoadDivGraph("./data/image/enemy/bit.png", 9, 3, 3, 160, 120, _enemyBig);
+    myLoadDivGraph("./data/image/enemy/small.png", 2, 2, 1, 32, 32, _enemySmall);
 }
 
 /*!
@@ -33,7 +36,7 @@ int Image::myLoadGraph(const char *fileName)
 /*!
 @brief LoadDivGraphをして、かつそのハンドルをメンバ変数に追加する
 */
-int Image::myLoadDivGraph(char *fileName, int n, int xn, int yn, int w, int h, int* buf)
+int Image::myLoadDivGraph(const char *fileName, int n, int xn, int yn, int w, int h, int* buf)
 {
     int ret = LoadDivGraph(fileName, n, xn, yn, w, h, buf);
     for (int i = 0; i < n; i++) {

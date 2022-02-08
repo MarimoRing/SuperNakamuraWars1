@@ -39,6 +39,9 @@
     <Filter Include="ソース ファイル\Board">
       <UniqueIdentifier>{b6cbd322-77bd-45f8-9940-43cac71166a3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\Enemy">
+      <UniqueIdentifier>{01bf68b5-cdec-4895-867c-2c12223c61cd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Looper.cpp">
@@ -80,7 +83,7 @@
     <ClCompile Include="src\Pad.cpp">
       <Filter>ソース ファイル\Input</Filter>
     </ClCompile>
-    <ClCompile Include="src\Player.cpp">
+    <ClCompile Include="src\Cursor.cpp">
       <Filter>ソース ファイル\Player</Filter>
     </ClCompile>
     <ClCompile Include="src\Image.cpp">
@@ -88,6 +91,12 @@
     </ClCompile>
     <ClCompile Include="src\Board.cpp">
       <Filter>ソース ファイル\Board</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Enemy.cpp">
+      <Filter>ソース ファイル\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EnemyManager.cpp">
+      <Filter>ソース ファイル\Enemy</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -142,7 +151,7 @@
     <ClInclude Include="src\Pad.h">
       <Filter>ソース ファイル\Input</Filter>
     </ClInclude>
-    <ClInclude Include="src\Player.h">
+    <ClInclude Include="src\Cursor.h">
       <Filter>ソース ファイル\Player</Filter>
     </ClInclude>
     <ClInclude Include="src\Image.h">
@@ -162,6 +171,12 @@
     </ClInclude>
     <ClInclude Include="src\Board.h">
       <Filter>ソース ファイル\Board</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Enemy.h">
+      <Filter>ソース ファイル\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EnemyManager.h">
+      <Filter>ソース ファイル\Enemy</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,4 +1,4 @@
-#include "Player.h"
+#include "Cursor.h"
 #include "Pad.h"
 #include "DxLib.h"
 #include "Image.h"
@@ -6,25 +6,25 @@
 
 const static float SPEED = 100;
 
-Player::Player() : _x(450), _y(450)
+Cursor::Cursor() : _x(450), _y(450)
 {
 }
 
-bool Player::update()
+bool Cursor::update()
 {
     move();
     return true;
 }
 
-void Player::draw() const
+void Cursor::draw() const
 {
-    DrawRotaGraphF(_x, _y, 1.0, 0.0, Image::getIns()->getPlayer(), TRUE);
+    DrawRotaGraphF(_x, _y, 1.0, 0.0, Image::getIns()->getCursor(), TRUE);
 }
 
 /*!
 @brief ƒvƒŒƒCƒ„[‚ð“®‚©‚·
 */
-void Player::move()
+void Cursor::move()
 {
     float moveX = 0, moveY = 0;
     if (Pad::getIns()->get(ePad::left) == 1) {
