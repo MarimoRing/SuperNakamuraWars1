@@ -1,6 +1,9 @@
 #include "Looper.h"
 #include "TitleScene.h"
 #include "Error.h"
+#include "ScenarioDemo.h"
+#include "ScenarioEndDemo.h"
+#include "Intermission.h"
 #include "MapScene.h"
 #include "Macro.h"
 #include "Keyboard.h"
@@ -47,12 +50,19 @@ void Looper::onSceneChanged(const eScene scene, const Parameter& parameter, cons
     case Title://タイトル画面
         _sceneStack.push(make_shared<TitleScene>(this, parameter));
         break;
-    case MapUI://マップ画面
+    case ScenarioDemo://タイトル画面
+        _sceneStack.push(make_shared<ScenarioDemoScene>(this, parameter));
+        break;
+    case Map://マップ画面
         _sceneStack.push(make_shared<MapScene>(this, parameter));
         break;
     case Battle://戦闘画面
         break;
+    case ScenarioEndDemo://タイトル画面
+        _sceneStack.push(make_shared<ScenarioEndDemoScene>(this, parameter));
+        break;
     case Intermission://インターミッション画面
+        _sceneStack.push(make_shared<IntermissionScene>(this, parameter));
         break;
     default:
         //どうしようもないエラー発生

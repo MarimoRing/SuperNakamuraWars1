@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\AbsrtactEnemy.cpp" />
+    <ClCompile Include="src\AbstactEnemy.cpp" />
     <ClCompile Include="src\AbstractScene.cpp" />
     <ClCompile Include="src\BigEnemy.cpp" />
     <ClCompile Include="src\Board.cpp" />
@@ -29,6 +29,7 @@
     <ClCompile Include="src\EnemyManager.cpp" />
     <ClCompile Include="src\Error.cpp" />
     <ClCompile Include="src\Fps.cpp" />
+    <ClCompile Include="src\Intermission.cpp" />
     <ClCompile Include="src\MapScene.cpp" />
     <ClCompile Include="src\Image.cpp" />
     <ClCompile Include="src\Keyboard.cpp" />
@@ -38,7 +39,9 @@
     <ClCompile Include="src\Pad.cpp" />
     <ClCompile Include="src\Parameter.cpp" />
     <ClCompile Include="src\Cursor.cpp" />
+    <ClCompile Include="src\ScenarioEndDemo.cpp" />
     <ClCompile Include="src\SmallEnemy.cpp" />
+    <ClCompile Include="src\ScenarioDemo.cpp" />
     <ClCompile Include="src\SystemMain.cpp" />
     <ClCompile Include="src\TitleScene.cpp" />
   </ItemGroup>
@@ -56,6 +59,7 @@
     <ClInclude Include="src\Error.h" />
     <ClInclude Include="src\eScene.h" />
     <ClInclude Include="src\Fps.h" />
+    <ClInclude Include="src\Intermission.h" />
     <ClInclude Include="src\MapScene.h" />
     <ClInclude Include="src\Image.h" />
     <ClInclude Include="src\IOnSceneChangedListener.h" />
@@ -67,9 +71,12 @@
     <ClInclude Include="src\Parameter.h" />
     <ClInclude Include="src\Picture.h" />
     <ClInclude Include="src\Cursor.h" />
+    <ClInclude Include="src\ScenarioDemo.h" />
+    <ClInclude Include="src\ScenarioEndDemo.h" />
     <ClInclude Include="src\Setting.h" />
     <ClInclude Include="src\Singleton.h" />
     <ClInclude Include="src\SmallEnemy.h" />
+    <ClInclude Include="src\StartScene.h" />
     <ClInclude Include="src\SystemMain.h" />
     <ClInclude Include="src\Task.h" />
     <ClInclude Include="src\TitleScene.h" />

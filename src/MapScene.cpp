@@ -1,6 +1,10 @@
 #include "MapScene.h"
+#include "ScenarioEndDemo.h"
 #include <DxLib.h>
 #include "Macro.h"
+#include "Keyboard.h"
+#include "Pad.h"
+#include "Define.h"
 
 const char* MapScene::ParameterTagStage = "ParameterTagStage";//パラメータのタグ「ステージ」
 const char* MapScene::ParameterTagLevel = "ParameterTagLevel";//パラメータのタグ「レベル」
@@ -17,6 +21,13 @@ void MapScene::update()
     _board->update();
     _cursor->update();
     _enemyManager->update();
+    if (Pad::getIns()->get(ePad::decision) == 1) {
+        Parameter parameter;
+        parameter.set(ScenarioEndDemoScene::ParameterTagLevel, Define::eLevel::Easy);
+        const bool stackClear = false;
+        _implSceneChanged->onSceneChanged(eScene::ScenarioEndDemo, parameter, stackClear);
+        return;
+    }
 }
 
 void MapScene::draw() const

@@ -30,9 +30,6 @@
     <Filter Include="ソース ファイル\Oldcode">
       <UniqueIdentifier>{263877a4-fedf-41bb-97a3-1243748971e7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\MapUI">
-      <UniqueIdentifier>{ab191e9f-a7cb-4d74-802d-b0a544c53281}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース ファイル\Board">
       <UniqueIdentifier>{b6cbd322-77bd-45f8-9940-43cac71166a3}</UniqueIdentifier>
     </Filter>
@@ -41,6 +38,18 @@
     </Filter>
     <Filter Include="ソース ファイル\Cursor">
       <UniqueIdentifier>{1af7ae57-b1b1-4821-a384-50b380c81832}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\MapScene">
+      <UniqueIdentifier>{ab191e9f-a7cb-4d74-802d-b0a544c53281}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\ScenarioDemo">
+      <UniqueIdentifier>{6f73df21-5984-4e9b-808f-07c2b66341c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\ScenarioEndDemo">
+      <UniqueIdentifier>{8daa581a-0553-461d-8ac3-6f0ac6570411}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Intermission">
+      <UniqueIdentifier>{d66a6bfc-525e-491a-a493-e7cf0aab9da8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -69,7 +78,7 @@
       <Filter>ソース ファイル\Scene</Filter>
     </ClCompile>
     <ClCompile Include="src\MapScene.cpp">
-      <Filter>ソース ファイル\MapUI</Filter>
+      <Filter>ソース ファイル\MapScene</Filter>
     </ClCompile>
     <ClCompile Include="src\CalcUtils.cpp">
       <Filter>ソース ファイル\Utils</Filter>
@@ -98,7 +107,7 @@
     <ClCompile Include="src\EnemyManager.cpp">
       <Filter>ソース ファイル\Enemy</Filter>
     </ClCompile>
-    <ClCompile Include="src\AbsrtactEnemy.cpp">
+    <ClCompile Include="src\AbstactEnemy.cpp">
       <Filter>ソース ファイル\Enemy</Filter>
     </ClCompile>
     <ClCompile Include="src\BigEnemy.cpp">
@@ -109,6 +118,15 @@
     </ClCompile>
     <ClCompile Include="src\SmallEnemy.cpp">
       <Filter>ソース ファイル\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ScenarioDemo.cpp">
+      <Filter>ソース ファイル\ScenarioDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ScenarioEndDemo.cpp">
+      <Filter>ソース ファイル\ScenarioEndDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Intermission.cpp">
+      <Filter>ソース ファイル\Intermission</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -143,7 +161,7 @@
       <Filter>ソース ファイル\Scene</Filter>
     </ClInclude>
     <ClInclude Include="src\MapScene.h">
-      <Filter>ソース ファイル\MapUI</Filter>
+      <Filter>ソース ファイル\MapScene</Filter>
     </ClInclude>
     <ClInclude Include="src\Macro.h">
       <Filter>ソース ファイル\Common</Filter>
@@ -202,5 +220,13 @@
     <ClInclude Include="src\SmallEnemy.h">
       <Filter>ソース ファイル\Enemy</Filter>
     </ClInclude>
+    <ClInclude Include="src\StartScene.h" />
+    <ClInclude Include="src\ScenarioDemo.h">
+      <Filter>ソース ファイル\ScenarioDemo</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ScenarioEndDemo.h">
+      <Filter>ソース ファイル\ScenarioEndDemo</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Intermission.h" />
   </ItemGroup>
 </Project>

@@ -1,12 +1,10 @@
 #include "TitleScene.h"
 #include <DxLib.h>
-#include "MapScene.h"
+#include "ScenarioDemo.h"
 #include "Define.h"
 #include "Keyboard.h"
 #include "Pad.h"
 #include "Setting.h"
-#include "Picture.h"
-#include "Action.h"
 
 TitleScene::TitleScene(IOnSceneChangedListener* impl, const Parameter& parameter) : AbstractScene(impl, parameter)
 {
@@ -27,9 +25,9 @@ void TitleScene::update()
     if (Pad::getIns()->get(ePad::decision) == 1) {
         if (X == 0) {
             Parameter parameter;
-            parameter.set(MapScene::ParameterTagLevel, Define::eLevel::Easy);
+            parameter.set(ScenarioDemoScene::ParameterTagLevel, Define::eLevel::Easy);
             const bool stackClear = false;
-            _implSceneChanged->onSceneChanged(eScene::MapUI, parameter, stackClear);
+            _implSceneChanged->onSceneChanged(eScene::ScenarioDemo, parameter, stackClear);
             return;
         }
     }
