@@ -3,7 +3,6 @@
 #include <DxLib.h>
 #include "Image.h"
 #include "Setting.h"
-#include "Enum.h"
 
 bool Board::update()
 {

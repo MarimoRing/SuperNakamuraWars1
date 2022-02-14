@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Task.h"
+#include "Enum.h"
 
 class Board final : public Task
 {
@@ -12,6 +13,7 @@ public:
 
 private:
     void mapState();
+    std::vector<int> _mapState;
     void drawFrame() const;
 };
 
