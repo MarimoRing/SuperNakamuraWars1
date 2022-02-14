@@ -8,6 +8,7 @@ const static float SPEED = 100;
 
 Cursor::Cursor() : _x(450), _y(450)
 {
+
 }
 
 bool Cursor::update()
