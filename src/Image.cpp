@@ -3,7 +3,7 @@
 
 Image::Image()
 {
-    _player = myLoadGraph("./data/image/cursor/cursor.png");
+    _cursor = myLoadGraph("./data/image/cursor/cursor.png");
     _board = myLoadGraph("./data/image/board/board2.png");
     _board2 = myLoadGraph("./data/image/board/universe.png");
     myLoadDivGraph("./data/image/enemy/normal.png", 9, 3, 3, 54, 54, _enemyNormal);

@@ -1,6 +1,6 @@
 #pragma once
 
-#include "eScene.h"
+#include "Enum.h"
 #include "AbstractScene.h"
 #include "Parameter.h"
 

@@ -22,7 +22,7 @@ void AbstractEnemy::initialize()
 bool AbstractEnemy::update()
 {
     _counter++;
-    _x += cos(_angle)*_speed;
-    _y += sin(_angle)*_speed;
+    //_x += cos(_angle)*_speed;
+    //_y += sin(_angle)*_speed;
     return true;
 }

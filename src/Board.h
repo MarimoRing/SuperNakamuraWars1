@@ -11,6 +11,7 @@ public:
     void draw() const override;
 
 private:
+    void mapState();
     void drawFrame() const;
 };
 

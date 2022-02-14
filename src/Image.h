@@ -12,7 +12,7 @@ public:
     void load() {}
     void release();
 
-    int getCursor() const { return _player; }
+    int getCursor() const { return _cursor; }
     int getBoard()  const { return _board; }
     int getBoard2() const { return _board2; }
     const int* getEnemySmall () const { return _enemySmall; }
@@ -24,7 +24,7 @@ private:
     int myLoadDivGraph(const char *fileName, int n, int xn, int yn, int w, int h, int* buf);
 
     std::vector<int> _images;
-    int _player;
+    int _cursor;
     int _board;
     int _board2;
     int _enemySmall[2];

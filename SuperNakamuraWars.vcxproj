@@ -48,8 +48,6 @@
   <ItemGroup>
     <ClInclude Include="src\AbstractEnemy.h" />
     <ClInclude Include="src\AbstractScene.h" />
-    <ClInclude Include="src\Action.h" />
-    <ClInclude Include="src\Arrow.h" />
     <ClInclude Include="src\BigEnemy.h" />
     <ClInclude Include="src\Board.h" />
     <ClInclude Include="src\CalcUtils.h" />
@@ -57,7 +55,7 @@
     <ClInclude Include="src\Enemy.h" />
     <ClInclude Include="src\EnemyManager.h" />
     <ClInclude Include="src\Error.h" />
-    <ClInclude Include="src\eScene.h" />
+    <ClInclude Include="src\Enum.h" />
     <ClInclude Include="src\Fps.h" />
     <ClInclude Include="src\Intermission.h" />
     <ClInclude Include="src\MapScene.h" />
@@ -69,7 +67,6 @@
     <ClInclude Include="src\NormalEnemy.h" />
     <ClInclude Include="src\Pad.h" />
     <ClInclude Include="src\Parameter.h" />
-    <ClInclude Include="src\Picture.h" />
     <ClInclude Include="src\Cursor.h" />
     <ClInclude Include="src\ScenarioDemo.h" />
     <ClInclude Include="src\ScenarioEndDemo.h" />

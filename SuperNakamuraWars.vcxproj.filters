@@ -27,9 +27,6 @@
     <Filter Include="ソース ファイル\Resource">
       <UniqueIdentifier>{c55f8ded-e91e-4e89-80b0-452a7695fe17}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\Oldcode">
-      <UniqueIdentifier>{263877a4-fedf-41bb-97a3-1243748971e7}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース ファイル\Board">
       <UniqueIdentifier>{b6cbd322-77bd-45f8-9940-43cac71166a3}</UniqueIdentifier>
     </Filter>
@@ -151,7 +148,7 @@
     <ClInclude Include="src\AbstractScene.h">
       <Filter>ソース ファイル\Scene</Filter>
     </ClInclude>
-    <ClInclude Include="src\eScene.h">
+    <ClInclude Include="src\Enum.h">
       <Filter>ソース ファイル\Scene</Filter>
     </ClInclude>
     <ClInclude Include="src\IOnSceneChangedListener.h">
@@ -187,18 +184,6 @@
     <ClInclude Include="src\Image.h">
       <Filter>ソース ファイル\Resource</Filter>
     </ClInclude>
-    <ClInclude Include="src\Action.h">
-      <Filter>ソース ファイル\Oldcode</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Arrow.h">
-      <Filter>ソース ファイル\Oldcode</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Picture.h">
-      <Filter>ソース ファイル\Oldcode</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Setting.h">
-      <Filter>ソース ファイル\Oldcode</Filter>
-    </ClInclude>
     <ClInclude Include="src\Board.h">
       <Filter>ソース ファイル\Board</Filter>
     </ClInclude>
@@ -228,5 +213,8 @@
       <Filter>ソース ファイル\ScenarioEndDemo</Filter>
     </ClInclude>
     <ClInclude Include="src\Intermission.h" />
+    <ClInclude Include="src\Setting.h">
+      <Filter>ソース ファイル\Resource</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

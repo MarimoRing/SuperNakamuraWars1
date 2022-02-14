@@ -8,3 +8,9 @@ enum eScene {
     ScenarioEndDemo, //シナリオエンドデモ
     Intermission, //インターミッション画面
 };
+
+enum MapState {
+    Nothing,    //盤面上に何もない
+    Friend,     //味方キャラクター
+    Enemy,      //敵キャラクター
+};

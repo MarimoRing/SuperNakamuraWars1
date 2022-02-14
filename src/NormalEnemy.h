@@ -10,6 +10,5 @@ public:
 
 protected:
     void setSize() override;
-
 };
 
