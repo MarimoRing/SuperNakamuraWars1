@@ -9,11 +9,12 @@ public:
     virtual ~Cursor() = default;
     bool update() override;
     void draw() const override;
+    float _x, _y;   //À•W
+
 
 private:
     void move();
 
-    float _x, _y;   //À•W
     int _image;
 };
 

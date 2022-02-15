@@ -20,7 +20,8 @@ void BigEnemy::draw() const
         add = 0;
     }
     const int handle = Image::getIns()->getEnemyBig()[add + imgID[(_counter / 8) % 4]];
-    DrawRotaGraphF(_x, _y, 1.0, 0.0, handle, TRUE);
+    DrawRotaGraphF(_x, _y, 0.7, 0.0, handle, TRUE);
+
 }
 
 void BigEnemy::setSize()

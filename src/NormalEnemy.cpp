@@ -21,6 +21,7 @@ void NormalEnemy::draw() const
     }
     const int handle = Image::getIns()->getEnemyNormal()[add + imgID[(_counter / 8) % 4]];
     DrawRotaGraphF(_x, _y, 1.0, 0.0, handle, TRUE);
+
 }
 
 void NormalEnemy::setSize()

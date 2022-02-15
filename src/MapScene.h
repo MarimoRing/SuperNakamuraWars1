@@ -6,6 +6,8 @@
 #include <memory>
 #include "Board.h"
 #include "EnemyManager.h"
+#include "MapArray.h"
+#include "NormalEnemy.h"
 
 class MapScene : public AbstractScene
 {
@@ -23,5 +25,6 @@ private:
     std::shared_ptr<Cursor> _cursor;
     std::shared_ptr<Board>  _board;
     std::shared_ptr<EnemyManager>  _enemyManager;
+    std::shared_ptr<MapArray>  _maparray;
 };
 

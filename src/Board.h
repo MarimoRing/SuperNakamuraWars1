@@ -12,8 +12,6 @@ public:
     void draw() const override;
 
 private:
-    void mapState();
-    std::vector<int> _mapState;
     void drawFrame() const;
 };
 

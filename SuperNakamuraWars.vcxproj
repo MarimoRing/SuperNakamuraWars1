@@ -35,6 +35,7 @@
     <ClCompile Include="src\Keyboard.cpp" />
     <ClCompile Include="src\Looper.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\MapArray.cpp" />
     <ClCompile Include="src\NormalEnemy.cpp" />
     <ClCompile Include="src\Pad.cpp" />
     <ClCompile Include="src\Parameter.cpp" />
@@ -46,6 +47,7 @@
     <ClCompile Include="src\TitleScene.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="MapState.h" />
     <ClInclude Include="src\AbstractEnemy.h" />
     <ClInclude Include="src\AbstractScene.h" />
     <ClInclude Include="src\BigEnemy.h" />
@@ -64,6 +66,7 @@
     <ClInclude Include="src\Keyboard.h" />
     <ClInclude Include="src\Looper.h" />
     <ClInclude Include="src\Macro.h" />
+    <ClInclude Include="src\MapArray.h" />
     <ClInclude Include="src\NormalEnemy.h" />
     <ClInclude Include="src\Pad.h" />
     <ClInclude Include="src\Parameter.h" />

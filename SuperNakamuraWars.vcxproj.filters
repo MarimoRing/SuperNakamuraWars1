@@ -125,6 +125,9 @@
     <ClCompile Include="src\Intermission.cpp">
       <Filter>ソース ファイル\Intermission</Filter>
     </ClCompile>
+    <ClCompile Include="src\MapArray.cpp">
+      <Filter>ソース ファイル\MapScene</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Looper.h">
@@ -215,6 +218,10 @@
     <ClInclude Include="src\Intermission.h" />
     <ClInclude Include="src\Setting.h">
       <Filter>ソース ファイル\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="MapState.h" />
+    <ClInclude Include="src\MapArray.h">
+      <Filter>ソース ファイル\MapScene</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

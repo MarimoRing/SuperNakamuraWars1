@@ -14,6 +14,7 @@ MapScene::MapScene(IOnSceneChangedListener* impl, const Parameter& parameter) : 
     _board = std::make_shared<Board>();
     _cursor = std::make_shared<Cursor>();
     _enemyManager = std::make_shared<EnemyManager>();
+    _maparray = std::make_shared<MapArray>();
 }
 
 void MapScene::update()
@@ -21,6 +22,11 @@ void MapScene::update()
     _board->update();
     _cursor->update();
     _enemyManager->update();
+    _maparray->update();
+
+    
+
+    /*
     if (Pad::getIns()->get(ePad::decision) == 1) {
         Parameter parameter;
         parameter.set(ScenarioEndDemoScene::ParameterTagLevel, Define::eLevel::Easy);
@@ -28,6 +34,7 @@ void MapScene::update()
         _implSceneChanged->onSceneChanged(eScene::ScenarioEndDemo, parameter, stackClear);
         return;
     }
+    */
 }
 
 void MapScene::draw() const

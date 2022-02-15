@@ -6,7 +6,6 @@
 
 bool Board::update()
 {
-    mapState();
     return true;
 }
 
@@ -26,25 +25,6 @@ void Board::drawFrame() const
         for (int j = 0; j <= h; j += 100) {
             DrawLine(i, 0, i, j, Color.White);
             DrawLine(0, j, i, j, Color.White);
-        }
-    }
-}
-
-/*!
-@brief マップ上でキャラクターの有無と敵味方を判断する
-*/
-void Board::mapState()
-{
-    const static int w = Define::OUT_W / 100;
-    const static int h = Define::OUT_H / 100;
-    int mapState[9][9];
-    for (int i = 0; i < w; i++)
-    {
-        for (int j = 0; j < h; j++)
-        {
-            mapState[i][j] = Nothing;
-            //if () mapState[i][j] = Friend;
-            //if () mapState[i][j] = Enemy;
         }
     }
 }
