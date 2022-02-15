@@ -8,6 +8,9 @@
 
 TitleScene::TitleScene(IOnSceneChangedListener* impl, const Parameter& parameter) : AbstractScene(impl, parameter)
 {
+    Font.Read();
+    int FontSize = CreateFontToHandle(NULL, 30, 6);
+
 }
 
 void TitleScene::update()
@@ -37,14 +40,15 @@ void TitleScene::draw() const
 {
     const static int A = 400;
     const static int B = 400;
+    const static int I = 38;
 
     Color.Read();
-    DrawString(100, 100, "スーパー中村卓大戦", Color.White/*GetColor(255, 255, 255)*/);
+    DrawStringToHandle(100, 100, "スーパー中村卓大戦", Color.White, Font.c[38]);
     DrawBox(A - 150, B - 50, A + 600, B + 520, Color.Blue, TRUE);
-    DrawString(A, B, "スタート", Color.White);
-    DrawString(A, B + 100, "ロード", Color.White);
-    DrawString(A, B + 200, "コンティニュー", Color.White);
-    DrawString(A, B + 300, "メニュー", Color.White);
-    DrawString(A, B + 400, "ゲーム終了", Color.White);
-    DrawString(A - 100, B + X, "→", Color.White);    
+    DrawStringToHandle(A, B, "スタート", Color.White, Font.c[I]);
+    DrawStringToHandle(A, B + 100, "ロード", Color.White, Font.c[I]);
+    DrawStringToHandle(A, B + 200, "コンティニュー", Color.White, Font.c[I]);
+    DrawStringToHandle(A, B + 300, "メニュー", Color.White, Font.c[I]);
+    DrawStringToHandle(A, B + 400, "ゲーム終了", Color.White, Font.c[I]);
+    DrawStringToHandle(A - 100, B + X, "→", Color.White, Font.c[I]);
 }

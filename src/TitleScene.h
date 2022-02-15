@@ -14,4 +14,5 @@ private:
     int X = 0;
     const static int A;
     const static int B;
+    const static int I;
 };
